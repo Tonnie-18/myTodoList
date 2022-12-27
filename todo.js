@@ -6,7 +6,8 @@ const CHECK = "bi-check-circle-fill";
 const UNCHECK= "bi bi-circle";
 const LINE_THROUGH="lineThrough";
 
-let LIST, id;
+let id;
+const LIST= [];
 
 
 //Get item from local storage
