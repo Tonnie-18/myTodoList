@@ -2,6 +2,13 @@
 let task = document.getElementById('task');
 
 
+//theme transition event;
+document.querySelector(".icons").addEventListener("click", ()=>{
+  document.querySelector(".light-logo").classList.toggle("animate-light");
+  document.querySelector(".dark-logo").classList.toggle("animate-dark");
+  document.querySelector(".container").classList.toggle("lightBackground");
+})
+
 const CHECK = "bi-check-circle-fill";
 const UNCHECK= "bi bi-circle";
 const LINE_THROUGH="lineThrough";

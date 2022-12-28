@@ -10,6 +10,11 @@ body{
     background: #32315B;
     height: 500px;
     width: 100%;
+    transition: background-color 1s;
+}
+
+.lightBackground{
+    background: #f2f2f2;
 }
 
 
@@ -26,24 +31,66 @@ body{
     font-size: xx-large;
 }
 
-.dot{
+.themeAndName{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.theme{
     height: 15px;
-  width: 15px;
-  background-color: #f3ae24;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 6px;
-  align-items: center;
+    width: 15px;
+    display: inline-block;
+    margin-right: 6px;
+    align-items: center;
+    font-size: xx-large;
 }
 .name{
     color: aliceblue;
     font-size: xx-large;
+    margin: 10px;
 }
 
-.dot .name{
-    display: flex;
-    align-items: center;
-    justify-content: end;
+.icons{
+    position: relative;
+}
+
+.dark,.light{
+    width: fit-content;
+    height: fit-content;
+}
+
+.light{
+    color: white;
+    font-size: x-large;
+}
+.dark{
+    position: absolute;
+    font-size: x-large;
+    inset: 0;
+}
+
+.dark-logo{
+    opacity: 0;
+    transform: translateY(20%)rotateZ('50deg');
+    transition: all 1s ease-out;
+}
+
+.light-logo{
+    opacity: 1;
+    transform: translateY(0)rotateZ('0deg');
+    transition: all 1s ease-out;
+
+}
+
+.animate-light{
+    opacity: 0;
+    transform: translateY(20%)rotateZ('100deg');
+}
+
+.animate-dark{
+    opacity: 1;
+    transform: translateY(0)rotateZ('0deg');
 }
 
 hr{
